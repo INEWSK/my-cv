@@ -8,6 +8,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 class App extends Component {
+  componentDidMount() {
+    document.title = 'CV of Y.K';
+  }
   render() {
     return (
       <div className="App">
