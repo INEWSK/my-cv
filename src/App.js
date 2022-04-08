@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react"
+import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "./App.scss";
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <BrowserRouter>
+
+          {/* Header */}
+          <Navbar bg="light">
+            <Container>
+              <Navbar.Brand href="/">INEWSK</Navbar.Brand>
+              <Nav className="justify-content-end">
+                <Nav.Item>
+                  <Nav.Link active>CV</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="https://inewsk.me/">Blog</Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link href="https://github.com/INEWSK">Github</Nav.Link>
+                </Nav.Item>
+              </Nav>
+            </Container>
+          </Navbar>
+
+          {/* Content */}
+
+
+          {/* Footer */}
+          <Navbar fixed="bottom">
+            <Container>
+              <Navbar.Text>Footer</Navbar.Text>
+            </Container>
+          </Navbar>
+
+        </BrowserRouter>
+      </div>
+    );
+  }
 }
 
 export default App;
