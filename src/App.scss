@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  color: rgba(0, 0, 0, 0.84);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -8,8 +9,29 @@ body {
 }
 
 .App {
-  .header {
-    background-color: #f0f2f5;
-    height: 60px;
+  hr {
+    border: 0;
+    opacity: 0.1;
+  }
+
+  .cv-avatar {
+    transform: rotate(0deg);
+    transition: transform 1s;
+  }
+
+  .cv-avatar:hover {
+    transform: rotate(12deg);
+  }
+
+  .cv-content {
+    margin: 4em auto 6em;
+    p {
+      font-size: small;
+    }
+  }
+
+  .cv-block {
+    margin-top: 2em;
+    font-size: small;
   }
 }
