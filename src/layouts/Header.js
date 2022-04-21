@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 
-import { Menu as menuSchema } from '../schemas/Menu';
-
 export const Header = () => {
   return (
     <Navbar bg="light">

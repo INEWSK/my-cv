@@ -34,13 +34,13 @@ export const Content = () => {
                   University.
                 </p>
                 <p>
-                  Major in Computer Science, under Mobile Application and
-                  Website Development Department.
+                  Major in Computer Science, under <b>Mobile Application</b> and <b>Website Development</b> Department.
                 </p>
                 <p>Currently learning AI and machine learning.</p>
               </div>
               <div className="cv-block">
                 <h2>Education</h2>
+                <hr />
                 <Row>
                   <Col xs={8}>
                     <h6>B. S. with Honours in Computer Science</h6>
@@ -61,19 +61,12 @@ export const Content = () => {
                   </Col>
                   <Col className="text-end">2019 - 2021</Col>
                 </Row>
-                <Row>
-                  <Col xs={9}>
-                    <h6>Diploma of Foundation Studies - IT</h6>
-                    <p>Hong Kong Institute of Vocational Education (Sha Tin)</p>
-                  </Col>
-                  <Col className="text-end">2018 - 2019</Col>
-                </Row>
               </div>
               <div className="cv-block">
                 <h2>Experience</h2>
                 <hr />
                 <Row>
-                  <Col xs={8}>
+                  <Col xs={9}>
                     <h6>
                       Front-End Internship Web Developer at ROBI³ Robotics
                     </h6>
@@ -85,7 +78,7 @@ export const Content = () => {
                   <Col className="text-end">09/2021 - 04/2022</Col>
                 </Row>
                 <Row>
-                  <Col xs={8}>
+                  <Col xs={9}>
                     <h6>
                       Website Developer Internship at Happy-Retrieve
                       (楽活新中年)
@@ -108,12 +101,12 @@ export const Content = () => {
                 <p>
                   Built a full-stack mobile application{' '}
                   <strong>with Flutter</strong> and used AI to allow users use
-                  their mobile's camera to identify what type is this plant and
-                  locate what plants are around users
+                  their mobile's camera to identify type of the plant and
+                  locate plants are around users
                 </p>
                 <h6>Gamblers Recovery Journal Check-in Web Application</h6>
                 <p>
-                  Designed and Built a website with PHP for users record their
+                  Designed and Built a website <b>with PHP</b> for users record their
                   situation of gamblers recovery
                 </p>
               </div>

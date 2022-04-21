@@ -25,13 +25,19 @@ body {
 
   .cv-content {
     margin: 4em auto 4em;
-    p {
+    
+    h1 {
+      font-weight: bold;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    .cv-block {
+      font-family: serif;
+      margin-top: 2em;
       font-size: small;
     }
-  }
-
-  .cv-block {
-    margin-top: 2em;
-    font-size: small;
   }
 }
