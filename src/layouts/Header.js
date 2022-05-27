@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <Navbar bg="light">
       <Container>
-        <Navbar.Brand href="/">INEWSK</Navbar.Brand>
+        <Navbar.Brand href="/">Kurokawa Yuji</Navbar.Brand>
         <Nav className="justify-content-end">
           <Nav.Item>
             <Nav.Link active>CV</Nav.Link>

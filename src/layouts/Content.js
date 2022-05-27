@@ -21,7 +21,7 @@ export const Content = () => {
               />
             </Col>
             <Col className="mt-4">
-              <h1>Y.K</h1>
+              <h1>Kurokawa Yuji</h1>
             </Col>
           </Row>
           <Row>

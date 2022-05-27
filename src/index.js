@@ -5,9 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { App } from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-document.title = 'CV of Y.K';
-
+document.title = 'CV of Yuji';
 root.render(
   <React.StrictMode>
     <App />
