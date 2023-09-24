@@ -101,7 +101,7 @@
   }
 
   main {
-    @apply container flex flex-col justify-center min-h-screen max-w-4xl py-8 gap-10;
+    @apply container flex flex-col justify-center min-h-screen max-w-4xl py-8 gap-8;
   }
 
   header {

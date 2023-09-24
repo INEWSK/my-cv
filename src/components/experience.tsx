@@ -16,7 +16,7 @@ const Experience = () => {
       </div>
       <div className="item">
         <div className="content">
-          <h4>Software Engineer Internship</h4>
+          <h4>Software Engineer</h4>
           <h5>ROBI3 Robotics</h5>
           <p>
             Collaborated with clients to understand their business requirements
