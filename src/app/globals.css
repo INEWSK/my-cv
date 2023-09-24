@@ -2,26 +2,175 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background: 0 0% 100%;
+    --foreground: 224 71.4% 4.1%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+
+    --primary: 220.9 39.3% 11%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 224 71.4% 4.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 210 20% 98%;
+    --primary-foreground: 220.9 39.3% 11%;
+
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 216 12.2% 83.9%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-size: 14px;
+    @apply cursor-default leading-relaxed;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply text-3xl font-bold leading-loose;
+  }
+
+  h2 {
+    @apply text-2xl font-bold;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  h4 {
+    @apply font-bold;
+  }
+
+  h5 {
+    @apply text-slate-500;
+  }
+
+  main {
+    @apply container flex flex-col justify-center min-h-screen max-w-4xl py-8 gap-10;
+  }
+
+  header {
+    @apply flex flex-col md:flex-row justify-between md:items-center gap-4;
+  }
+
+  footer {
+    @apply flex flex-row text-slate-400 justify-between items-center;
+  }
+
+  footer a {
+    @apply text-slate-400;
+  }
+
+  section {
+    @apply flex flex-col space-y-4;
+  }
+
+  ul {
+    @apply list-disc list-inside;
+  }
+
+  ol {
+    @apply list-decimal list-inside;
+  }
+
+  li {
+    @apply mb-1;
+  }
+
+  a {
+    @apply text-primary hover:underline;
+  }
+
+  blockquote {
+    @apply border-l-4 border-primary pl-4;
+  }
+
+  code {
+    @apply bg-gray-100 text-gray-900 rounded px-2 mx-1;
+  }
+}
+
+@layer components {
+  .contact {
+    @apply flex flex-col space-y-1;
+  }
+
+  .contact-item {
+    @apply flex flex-row items-center space-x-2;
+  }
+
+  .item {
+    @apply grid grid-cols-12;
+  }
+
+  .item .content {
+    @apply col-span-12 md:col-span-9;
+  }
+
+  .item .date {
+    @apply col-span-12 md:col-span-3 md:text-right text-gray-500;
+  }
+
+  .projects .content {
+    @apply grid col-span-12;
+  }
+
+  .skills .content {
+    @apply grid col-span-12;
+  }
 }
