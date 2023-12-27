@@ -1,43 +1,44 @@
-import Award from "@/components/award";
-import Education from "@/components/education";
-import Experience from "@/components/experience";
+import Award from "@/app/ui/award";
+import Education from "@/app/ui/education";
+import Experience from "@/app/ui/experience";
+import Project from "@/app/ui/project";
+import Skill from "@/app/ui/skill";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import Project from "@/components/project";
-import SectionWrapper from "@/components/section-wrapper";
-import Skill from "@/components/skill";
 
 const sectionContent = [
   {
-    title: "Education",
+    label: "Education",
     node: Education,
   },
   {
-    title: "Experience",
+    label: "Experience",
     node: Experience,
   },
   {
-    title: "Projects",
+    label: "Projects",
     node: Project,
   },
   {
-    title: "Awards",
+    label: "Awards",
     node: Award,
   },
   {
-    title: "Skills",
+    label: "Skills",
     node: Skill,
   },
-];
+] as const;
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
       <Header />
-      {sectionContent.map((item, index) => (
-        <SectionWrapper key={index} title={item.title}>
+      {sectionContent.map((item) => (
+        <section key={item.label} className={item.label.toLowerCase()}>
+          <h2>{item.label}</h2>
+          <hr />
           <item.node />
-        </SectionWrapper>
+        </section>
       ))}
       <Footer />
     </main>

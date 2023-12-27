@@ -5,13 +5,13 @@ import "./globals.css";
 const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
   weight: ["400", "700"],
-  style: ["normal", "italic"],
+  style: ["normal"],
 });
 
 export const metadata: Metadata = {
   title: "YUEN Yik Chun - Resume",
   description:
-    "Web resume built with Next.js, made by heart, modified by hand.",
+    "Personal web resume built with Next.js, made by heart, modified by hand.",
   keywords: [
     "Resume",
     "CV",
@@ -19,7 +19,6 @@ export const metadata: Metadata = {
     "React",
     "Web Developer",
     "Mobile Application Developer",
-    "TypeScript",
   ],
   themeColor: "#000000",
   authors: {
@@ -36,6 +35,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+      </head>
       <body className={ibmPlexSerif.className}>{children}</body>
     </html>
   );

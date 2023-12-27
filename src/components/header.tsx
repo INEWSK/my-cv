@@ -1,20 +1,22 @@
-import { FaBlog, FaEnvelope, FaGithub } from "react-icons/fa";
+import {
+  ArchiveIcon,
+  EnvelopeClosedIcon,
+  GitHubLogoIcon,
+} from "@radix-ui/react-icons";
 
-// contactItem included icon and text
-// item included mail, blog and github
 const contactItem = [
   {
-    icon: <FaEnvelope />,
+    icon: <EnvelopeClosedIcon />,
     label: "i@inewsk.me",
     url: "mailto:i@inewsk.me",
   },
   {
-    icon: <FaBlog />,
+    icon: <ArchiveIcon />,
     label: "Blog",
     url: "https://inewsk.me",
   },
   {
-    icon: <FaGithub />,
+    icon: <GitHubLogoIcon />,
     label: "Github",
     url: "https://github.com/INEWSK",
   },
